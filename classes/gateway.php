@@ -71,6 +71,7 @@ class gateway extends \core_sms\gateway {
         $subject = get_string(
             $usedfallback ? 'emailsubjectfallback' : 'emailsubject',
             'smsgateway_email',
+            $message->recipientnumber,
         );
         $body = get_string('emailbody', 'smsgateway_email', [
             'recipientnumber' => $message->recipientnumber,

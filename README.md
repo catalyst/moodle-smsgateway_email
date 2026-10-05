@@ -30,6 +30,19 @@ No external configuration is required. An optional `priority` can be set in
 the gateway instance configuration to control how this gateway is prioritised
 relative to other configured SMS gateways.
 
+## Sending a quick test SMS
+
+1. Go to **Site administration > Plugins > SMS > Manage SMS gateways** and
+   add/enable an instance of the "Fake (email)" gateway.
+2. Go to **Site administration > Plugins > SMS > Send test SMS**
+   (`/sms/testsendsms.php`), also linked from the "Manage SMS gateways" page.
+   This core Moodle page (similar to *Test outgoing mail configuration*) lets
+   you send a message through the Moodle SMS API
+   (`core_sms\manager::send()`) to any phone number, optionally associated
+   with a specific Moodle user. As long as this gateway is the only one
+   enabled (or has the highest priority), the "SMS" will be emailed instead
+   of sent.
+
 ## Warning
 
 This plugin is intended purely as a development and testing aid. It does not
