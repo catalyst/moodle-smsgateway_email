@@ -26,7 +26,7 @@ $string['emailbody'] = 'This is a test SMS message which would have been sent to
 
 {$a->content}';
 $string['emailinformation'] = 'This gateway does not send real SMS messages. Instead, the message content is emailed to the Moodle user matching the recipient\'s mobile number. If no matching user can be found, the message is emailed to the primary admin instead. It is intended for testing and development purposes only and should not be enabled on a production site.';
-$string['emailsubject'] = 'Test SMS message';
-$string['emailsubjectfallback'] = 'Test SMS message (recipient not found)';
+$string['emailsubject'] = 'Test SMS message for {$a}';
+$string['emailsubjectfallback'] = 'Test SMS message for {$a} (recipient not found)';
 $string['pluginname'] = 'Fake (email)';
 $string['privacy:metadata'] = 'The fake email SMS gateway plugin does not store any personal data.';
